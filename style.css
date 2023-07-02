@@ -1,8 +1,14 @@
 .container{
     background-color: rgb(80, 20, 30);
+    display: inline;
 }
 .username{
     text-align: center;
     
     display: inline-block;
+}
+.back{
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
 }
