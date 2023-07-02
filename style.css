@@ -1,3 +1,8 @@
 .container{
     background-color: rgb(80, 20, 30);
 }
+.username{
+    text-align: center;
+    
+    display: inline-block;
+}
