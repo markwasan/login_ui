@@ -1,11 +1,13 @@
 .container{
     background-color: rgb(80, 20, 30);
-    display: inline;
-}
-.username{
-    text-align: center;
     
-    display: inline-block;
+    
+}
+.login{
+    text-align: center;
+    padding: 290px;
+    
+    
 }
 .back{
     background-color: #777;
