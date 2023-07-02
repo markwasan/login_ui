@@ -32,19 +32,38 @@ footer{
     text-align: center;
     color: white;
 }
-.navication{
+.navication .a{
     position: relative;
     font-size: 1.1em;
-    margin-left: 40px;
     font-weight: 500;
     text-decoration: none;
 }
-.navication.btnlogin-popup{
+.navication .a::after{
+    content: '';
+    position: absolute;
+
+
+
+}
+.navication .btnlogin-popup{
     width: 130px;
     height: 30px;
     border: 3px solid white;
     background: transparent;
     border-radius: 6px;
+    outline: none;
+    font-weight: 500;
+    transition: .5s;
+    font-size: 1.1em;
+    margin-left: 30px;
+    cursor: pointer;
+
+
+}
+.navication .btnlogin-popup:hover{
+    background: white;
+    color: black;
+
 }
 .login{
     font-family: 'Courier New', Courier, monospace;
