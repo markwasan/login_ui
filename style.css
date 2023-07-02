@@ -4,8 +4,9 @@
     
 }
 .login{
+    font-family: 'Courier New', Courier, monospace;
     text-align: center;
-    padding: 290px;
+    padding: 280px;
     
     
 }
@@ -18,6 +19,20 @@
 .button1{
     background-color: blue;
     border: none;
-    padding: 15px 40px;
-    color: aliceblue; 
+    padding: 10px 40px;
+    color: aliceblue;
+    display: inline-block; 
+    text-decoration: none;
+    margin: 6px 2px;
+    font-size: 20px;
+}
+.button2{
+    background-color: blue;
+    border: none;
+    padding: 10px 40px;
+    color: aliceblue;
+    display: inline-block; 
+    text-decoration: none;
+    margin: 6px 1px;
+    font-size: 20px;
 }
