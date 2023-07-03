@@ -7,7 +7,7 @@
 }
 body{
     /* background-color: rgba(255, 99, 71, 0.2); */
-background-image: url('/image/logo.jpg');
+
 background-repeat: no-repeat;
 background-attachment: fixed;
 background-size: 100% 100%;
@@ -15,9 +15,9 @@ background-size: 100% 100%;
 
 header{
     position: fixed;
-    top:0;
-    left:0;
-    width:100%;
+    inset-block-start:0;
+    inset-inline-start:0;
+    inline-size:100%;
     padding: 20px 100px;
     background-color: #777;
     justify-content:space-between;
@@ -38,24 +38,31 @@ footer{
     color: aliceblue;
     font-size: 2em;
 }
-.navication .a{
-    position: relative;
+.navication a{
+    color: aliceblue;
+    text-decoration: none;
     font-size: 1.1em;
     font-weight: 500;
-    text-decoration: none;
-    color: aliceblue;
-    margin-left: 40px;
+    margin-inline-start: 40px;
 }
-.navication .a::after{
+
+.navication a::after{
     content: '';
     position: absolute;
-
-
+    inline-size: 100%;
+    inset-inline-start: 0;
+    inset-block-end: -6px;
+    color: aliceblue;
+    border-radius: 5px;
+    transition: .5s;
+}
+.navication a:hover::after{
+    color: black;
 
 }
 .navication .btnlogin-popup{
-    width: 130px;
-    height: 30px;
+    inline-size: 130px;
+    block-size: 30px;
     border: 3px solid white;
     background: transparent;
     border-radius: 6px;
@@ -63,7 +70,7 @@ footer{
     font-weight: 500;
     transition: .5s;
     font-size: 1.1em;
-    margin-left: 30px;
+    margin-inline-start: 30px;
     cursor: pointer;
 
 
@@ -73,12 +80,16 @@ footer{
     color: black;
 
 }
+
 .login{
+    border: 2px solid ;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
-    padding: 280px;
+    padding: 130px 2px;
     color:blue;
-    font-size: 25px;
+    font-size: 20px;
+    border-radius: 20px;
+
     
     
 }
@@ -90,8 +101,9 @@ footer{
     color: aliceblue;
     display: inline-block; 
     text-decoration: none;
-    margin: 6px 2px;
+    margin: 6px 1px;
     font-size: 20px;
+    
 }
 .button2{
     background-color: blue;
